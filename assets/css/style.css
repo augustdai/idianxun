@@ -1,0 +1,171 @@
+/*
+Custom css
+*/
+body {
+	background: #485464;
+}
+.d-flex {
+	background: inherit !important;
+}
+.aui-aside-menu {
+  position: relative;
+  width: 120px;
+  background: #313840;
+  height: 100%;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+#content-body,
+.aside-right > .modal-dialog {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.aui-aside-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.aui-aside-menu ul li {
+  text-align: center;
+  height: 64px;
+  line-height: 64px;
+}
+.aui-aside-menu ul li a {
+  display: block;
+  color: #9ba8b3;
+}
+.aui-aside-menu ul li a.aui-active,
+.aui-aside-menu ul li a:hover {
+  color: white;
+  background: #373e46;
+}
+.aui-aside-menu .aui-menu-tools {
+  width: 100%;
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+}
+/* 联系人 */
+#content-aside {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #373e46;
+}
+
+/* 聊天消息 */
+#chat-list {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: white !important;
+}
+.item-author {
+	color: white;
+}
+.list-item .flex a.item-author:hover {
+	color: #137eff;
+}
+/* 聊天内容显示区 */
+.scrollable {
+	height: calc(100vh - 191px);
+	overflow: auto;
+}
+
+#chat-form {
+	height: 67px;
+	overflow: hidden;
+}
+
+/* start:app.ui */
+#aui-chats-box {
+    height: calc(100vh - 143px);
+    overflow: auto;
+}
+#feed-form-1 {
+    height: 143px;
+    overflow: hidden;
+}
+.card-body {
+    position: relative;
+}
+.aui-c-msg-l-box,
+.aui-c-msg-r-box {
+    border-radius: 4px;
+    padding: .5rem .75rem;
+}
+.aui-c-msg-l-box {
+    color: #647787;
+    background-color: #d9eaff !important;
+}
+.aui-c-msg-r-box {
+    color: #647787;
+    background-color: #e5f5e1 !important;
+}
+.row-xs {
+    margin-top: 15px;
+}
+/* end:app.ui */
+
+/* 画小尾巴 */
+.media-chat-msg .left-arrow {
+    position:absolute;
+    top:10px;
+    left:-8px;
+    width:0;
+    height:0;
+    font-size:0;
+    border:solid 8px;
+    border-color: #f2f7f7 #fff #f2f7f7 #f2f7f7;
+    z-index: 9999 !important;
+}
+.tail-lefttop{
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    border: 0 solid transparent;
+    border-top:10px solid #fff;
+    -moz-border-radius:100px 0 0 0;
+    -webkit-border-radius:100px 0 0 0;
+    border-radius:100px 0 0 0;
+    width:20px;
+    height:20px;
+}
+.tail-righttop{
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    border: 0 solid transparent;
+    border-top:10px solid #53d48a;
+    -moz-border-radius:0 100px 0 0;
+    -webkit-border-radius:0 100px 0 0;
+    border-radius:0 100px 0 0;
+    width:20px;
+    height:20px;
+}
+.tail-rightbottom{
+    position: absolute;
+    z-index: 0;
+    right: 65px;
+    border: 0 solid transparent;
+    border-bottom:10px solid #e5f5e1;
+    -moz-border-radius:0 0 100px 0;
+    -webkit-border-radius:0 0 100px 0;
+    border-radius:0 0 100px 0;
+    width:20px;
+    height:20px;
+;
+}
+.tail-leftbottom {
+    position: absolute;
+    z-index: 0;
+    left: 65px;
+    border: 0 solid transparent;
+    border-bottom: 10px solid #d9eaff;
+    -moz-border-radius: 0 0 0 100px;
+    -webkit-border-radius: 0 0 0 100px;
+    border-radius: 0 0 0 100px;
+    width: 20px;
+    height: 20px;
+}
+/* end:画小尾巴 */

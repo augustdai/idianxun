@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>聊天通讯</title>
+  <meta name="description" content="Responsive, Bootstrap, BS4" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  
+  <!-- style -->
+  <!-- build:css ../assets/css/site.min.css -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/i-con.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+  <!-- endbuild -->
+</head>
+<body class="layout-column">
+
+  <!-- ############ LAYOUT START-->
+  <div id="main" class="layout-row flex">
+
+    <!-- ############ Content START-->
+    <div id="content" class="flex ">
+      <!-- ############ Main START-->
+
+      <div class="d-flex h-100 padding" style="width: 90%; margin:0 auto;">
+        <div class="d-flex flex h-100 block" style="margin-bottom: 0;">
+          <!-- start:导航菜单 -->
+          <div class="aui-aside-menu">
+            <ul class="aui-menu-base">
+              <li>
+                <a href="#" data-menu-id="1">
+                  <i class="mr-2 i-con i-con-comment"><i></i></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="aui-active" data-menu-id="2">
+                  <i class="mr-2 i-con i-con-user"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" data-menu-id="3">
+                  <i class="mr-2 i-con i-con-users"><i></i></i>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="aui-menu-tools">
+              <li><a href="#"><i class="mr-2 i-con i-con-grid"><i></i></i></a></li>
+              <li><a href="#"><i class="mr-2 i-con i-con-mail"><i></i></i></a></li>
+            </ul>
+          </div>
+          <!-- end:导航菜单 -->
+
+          <!-- start:左栏联系人 -->
+          <div class="aside aside-sm" id="content-aside" style="width: 260px;">
+            <div class="d-flex flex-column w-xl b-r bg-white modal-dialog" id="chat-nav">
+
+              <!-- start:好友搜索 -->
+              <div class="navbar b-b">
+                <div class="input-group flex">
+                  <input type="text" class="form-control px-0 no-bg no-border no-shadow search" placeholder="搜索..." required="">
+                  <span class="input-group-append">
+                    <button class="btn no-bg no-shadow i-con-h-a" type="button">
+                      <i class="i-con i-con-search w-16 text-muted"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+              <!-- end:好友搜索 -->
+
+              <!-- start:好友列表索 -->
+              <div class="scrollable hover">
+                <div class="list list-row">
+                  <div class="list-item " data-id="3">
+                    <div>
+                      <a href="#">
+                        <span class="w-48 avatar circle bg-info-lt" ><img src="../assets/img/a3.jpg" alt="."></span>
+                      </a>
+                    </div>
+                    <div class="flex">
+                      <a href="#" class="item-author ">张小娥</a>
+                      <div class="item-except text-muted h-1x">
+                        明天下午4:00我在楼下等你..
+                      </div>
+                    </div>
+                    <div></div>
+                  </div>
+
+                  <div class="list-item " data-id="3">
+                    <div>
+                      <a href="#">
+                        <span class="w-48 avatar circle bg-info-lt" ><img src="../assets/img/a3.jpg" alt="."></span>
+                      </a>
+                    </div>
+                    <div class="flex">
+                      <a href="#" class="item-author ">李力</a>
+                      <div class="item-except text-muted h-1x">
+                        一起打篮球
+                      </div>
+                    </div>
+                    <div></div>
+                  </div>
+
+                  <div class="list-item " data-id="3">
+                    <div>
+                      <a href="#">
+                        <span class="w-48 avatar circle bg-info-lt" ><img src="../assets/img/a3.jpg" alt="."></span>
+                      </a>
+                    </div>
+                    <div class="flex">
+                      <a href="app.message.html" class="item-author ">张涛</a>
+                      <div class="item-except text-muted h-1x">
+                        晚上9点撸啊撸，不要错过
+                      </div>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+              <!-- end:好友列表索 -->
+
+            </div>
+          </div>
+
+          <!-- 右边区:聊天区 -->
+          <div class="d-flex flex" id="content-body">
+
+            <!-- start:聊天区 -->
+            <div class="d-flex flex-column flex" id="chat-list" data-plugin="chat">
+              <div class="navbar flex-nowrap b-b">
+                <span class="text-md text-ellipsis flex mx-1">
+                  与 张小雨 正在聊天
+                </span>
+                <button data-toggle="modal" data-target="#content-aside-aside" data-modal class="d-xl-none btn btn-rounded btn-sm btn-icon no-bg">
+                  <span>
+                    <i class="i-con i-con-user text-muted"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="scrollable hover">
+                <div class="p-3">
+                  <div class="chat-list">
+                    <div class="chat-item" data-class>
+                      <a href="#" class="avatar w-40">
+                        <img src="../assets/img/a2.jpg" alt=".">
+                      </a>
+                      <div class="chat-body">
+                        <div class="chat-content rounded msg">
+                          你好！
+                        </div>
+                        <div class="chat-content rounded msg">
+                          怎么了...
+                        </div>
+                        <div class="chat-date date">
+                          2 天前
+                        </div>
+                      </div>
+                    </div>
+                
+                    <div class="chat-item" data-class="alt">
+                      <a href="#" class="avatar w-40">
+                        <img class="image" src="../assets/img/a0.jpg" alt=".">
+                      </a>
+                      <div class="chat-body">
+                        <div class="chat-content rounded msg">
+                          嗨，加勒特的冬天...
+                        </div>
+                        <div class="chat-content rounded msg">
+                         今天天气真不错...
+                        </div>
+                        <div class="chat-date date">
+                          8 小时前
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="hide">
+                    <div class="chat-item" id="chat-item" data-class>
+                      <a href="#" class="avatar w-40">
+                        <img class="image" src="../assets/img/a0.jpg" alt=".">
+                      </a>
+                      <div class="chat-body">
+                        <div class="chat-content rounded msg">
+                        </div>
+                        <div class="chat-date date"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 white lt b-t mt-auto" id="chat-form">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="请输入内容..." id="newField">
+                  <span class="input-group-append">
+                    <button class="btn btn-white no-shadow i-con-h-a" type="button" id="newBtn">
+                      <i class="i-con i-con-arrow-up"><i></i></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- end:聊天区 -->
+
+            <!-- start:聊天右边栏 -->
+            <div class="aside aside-lg aside-right" id="content-aside-aside">
+              <div class="modal-dialog bg-white b-l">
+                <div class="b-b">
+                  <div class="p-3">
+                    <div class="d-flex align-items-center justify-content-around">
+                      <a href="#" class="btn btn-icon i-con-h-a">
+                        <span>
+                          <i class="i-con i-con-mail text-muted"><i></i></i>
+                        </span>
+                      </a>
+                      <a href="#" class="avatar mx-2 w-96">
+                        <img src="../common/img/002.jpg" alt=".">
+                      </a>
+                      <a href="#" class="btn btn-icon i-con-h-a">
+                        <span>
+                          <i class="i-con i-con-phone text-muted"><i></i></i>
+                        </span>
+                      </a>
+                    </div>
+                    <div class="text-center mt-3">
+                      <a href="#" class="h6">繁华年间</a>
+                      <small class="d-block text-muted mt-2">augdai@qq.com</small>
+                    </div>
+                  </div>
+                  <div class="row no-gutters text-center b-t">
+                    <a href="#" class="col py-3">
+                      <span class="font-bold d-block">443</span>
+                      <small class="text-xs text-muted">相片</small>
+                    </a>
+                    <a href="#" class="col py-3 b-l b-r">
+                      <span class="font-bold d-block">2,435</span>
+                      <small class="text-xs text-muted">动态</small>
+                    </a>
+                    <a href="#" class="col py-3">
+                      <span class="font-bold d-block">345</span>
+                      <small class="text-xs text-muted">视频</small>
+                    </a>
+                  </div>
+                </div>
+                <div class="py-3">
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link i-con-h-a">
+                        <i class="i-con i-con-pin"></i>
+                        <span class="mx-2">中国-上海</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link i-con-h-a">
+                        <i class="i-con i-con-phone"><i></i></i>
+                        <span class="mx-2">177****8893</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link i-con-h-a">
+                        <i class="i-con i-con-time"><i></i></i>
+                        <span class="mx-2">august may</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link i-con-h-a">
+                        <i class="i-con i-con-mail"><i></i></i>
+                        <span class="mx-2">上海交通大学</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- end:聊天右边栏 -->
+          </div>
+          <!-- 右边区:聊天区 -->
+
+        </div>
+      </div>
+
+
+      <!-- ############ Main END-->
+        </div>
+    <!-- ############ Content END-->
+
+  </div>
+  <!-- ############ LAYOUT END-->
+
+
+  <!-- build:js ../assets/js/site.min.js -->
+  <!-- jQuery -->
+  <script src="../libs/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../libs/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- ajax page -->
+  <script src="../libs/pace-progress/pace.min.js"></script>
+  <script src="../libs/pjax/pjax.js"></script>
+  <script src="../assets/js/ajax.js"></script>
+  <!-- lazyload plugin -->
+  <script src="../assets/js/lazyload.config.js"></script>
+  <script src="../assets/js/lazyload.js"></script>
+  <script src="../assets/js/plugin.js"></script>
+  <!-- theme -->
+  <script src="../assets/js/theme.js"></script>
+  <!-- endbuild -->
+</body>
+
+<script type="text/javascript">
+  
+</script>
+
+</html>
